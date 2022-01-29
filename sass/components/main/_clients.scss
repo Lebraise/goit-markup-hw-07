@@ -1,10 +1,10 @@
-.company-list {
+.company {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.company-link {
+.company__link {
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -26,6 +26,6 @@
     }
 }
 
-.company-item:not(:last-child) {
+.company__item:not(:last-child) {
     margin-right: 30px;
 }

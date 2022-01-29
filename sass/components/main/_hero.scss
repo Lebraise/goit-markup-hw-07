@@ -3,7 +3,7 @@
     padding-bottom: 200px;
 }
 
-.order-hero {
+.hero__section {
     background: #2F303A;
     max-width: 1600px;
     height: 600px;
@@ -15,7 +15,7 @@
     background-position: center;
 }
 
-.order-title {
+.hero__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -26,7 +26,7 @@
     margin-bottom: 30px;
 }
 
-.order-button {
+.hero__button {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;

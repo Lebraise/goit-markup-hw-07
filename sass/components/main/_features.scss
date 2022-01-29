@@ -1,19 +1,19 @@
-.feature-section {
+.feature__section {
     padding-bottom: 0;
 }
 
-.feature-list {
+.feature {
     display: flex;
 }
 
-.feature-list-item {
+.feature__item {
     width: 270px;
     &:not(:last-child) {
         margin-right: 30px;
     }
 }
 
-.feature-title {
+.feature__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -22,7 +22,7 @@
     color: var(--text-color);
 }
 
-.feature-item {
+.feature__description {
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -31,7 +31,7 @@
     padding-top: 10px;  
 }
 
-.feature-list-item-icon {
+.feature__bar {
     width: 270px;
     height: 120px;
     display: flex;
@@ -42,7 +42,7 @@
     margin-bottom: 30px;
 }
 
-.feature-list-icon {
+.feature__icon {
     width: 70px;
     height: 70px;
 }

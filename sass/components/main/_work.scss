@@ -1,26 +1,11 @@
-.photo-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--text-color);
-    margin-bottom: 50px;
-}
-
-.work-block {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.work-list {
+.work {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-left: 0; 
 }
 
-.work-item {
+.work__item {
     position: relative;
     width: 370px;
     height: 294px;
@@ -29,7 +14,7 @@
     }
 }
 
-.work-item-text {
+.work__text {
     position: absolute;
     bottom: 0;
     left: 0;

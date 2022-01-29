@@ -3,7 +3,7 @@
     border-bottom: 1px solid #ECECEC;
 }
 
-.header-container {
+.header__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@
 
 /* --Стилизация слова WebStudio-- */
 
-.studio-name {
+.header__name {
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -35,11 +35,11 @@
 
 /* --Стилизация меню навигации-- */
 
-.header-list {
+.navigation__list {
     display: flex;
 }
 
-.list-studio {
+.navigation__studio {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -52,7 +52,7 @@
     }
 }
 
-.list-portfolio {
+.navigation__portfolio {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -65,7 +65,7 @@
     }   
 }
 
-.list-contacts {
+.navigation__contacts {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -92,19 +92,19 @@
     }
 }
 
-.contact-list {
+.contact {
     display: flex;
     margin-left: 215px;
     margin-right: auto;
 }
 
-.contact-list-item {
+.contact__item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contact-list-icon {
+.contact__icon {
     margin-right: 10px;
 }
 
@@ -122,7 +122,7 @@
 
 /* --Стилизация контактов хедера-- */
 
-.header-mail {
+.contact__mail {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -136,7 +136,7 @@
     }
 }
 
-.header-tel {
+.contact__tel {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;

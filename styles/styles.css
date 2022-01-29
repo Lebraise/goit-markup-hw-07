@@ -4,6 +4,7 @@
     --main-color: #2196F3;
     --text-color: #212121;
     --grey-color: #757575;
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -112,7 +113,7 @@ button {
     letter-spacing: 0.02em;
     color: var(--text-color);
     margin-right: 50px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition);
 }
 
 .list-portfolio {
@@ -122,7 +123,7 @@ button {
     letter-spacing: 0.02em;
     color: var(--text-color);
     margin-right: 50px;
-    transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:  color var(--transition);
 }
 
 .list-contacts {
@@ -131,7 +132,7 @@ button {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition);
 }
 
 .list-studio:hover,
@@ -151,7 +152,7 @@ button {
 
 
 .current { 
-    color: #2196F3;
+    color: var(--main-color);
     position: relative;
 }
 
@@ -159,7 +160,7 @@ button {
     content: '';
     width: 100%;
     height: 4px;
-    background: #2196F3;
+    background: var(--main-color);
     border-radius: 2px;
     position: absolute;
     left: 0;
@@ -186,13 +187,13 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: #757575;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--grey-color);
+    transition: fill var(--transition);
 }
 
 .envelope:hover, 
 .envelope:focus {
-    fill: #2196F3;
+    fill: var(--main-color);
 }
 
 
@@ -280,7 +281,7 @@ button {
     padding-bottom: 10px;
     padding-left: 32px;
     margin: auto;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: var(--transition);
 }
 
 
@@ -461,7 +462,7 @@ button {
 
 .member-icon-link:hover,
 .member-icon-link:focus {
-    background-color: #2196F3;
+    background-color: var(--main-color);
     color: #ffffff;
 }
 
@@ -503,10 +504,10 @@ button {
 
 .company-link:hover,
 .company-link:focus {
-    border: 1px solid #2196F3;
+    border: 1px solid var(--main-color);
     box-sizing: border-box;
     border-radius: 4px;
-    color: #2196F3;
+    color: var(--main-color);
 }
 
 
@@ -593,7 +594,7 @@ button {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     color: #ffffff;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition);
 }
 
 .adress-link {
@@ -606,7 +607,7 @@ button {
 
 .adress-link:hover,
 .adress-link:focus {
-    background-color: #2196F3;
+    background-color: var(--main-color);
 }
 
 
@@ -658,7 +659,7 @@ button {
 .mailing-btn {
     width: 200px;
     height: 50px;
-    background: #2196F3;
+    background: var(--main-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     display: flex;
@@ -713,7 +714,7 @@ button {
     padding-bottom: 6px;
     padding-left: 22px;
     border: hidden;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: var(--transition);
 }
 
 .filter-btn:active {
@@ -726,7 +727,7 @@ button {
 
 .filter-btn:hover, 
 .filter-btn:focus {
-    background: #2196F3;
+    background: var(--main-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     color: #ffffff;
@@ -762,7 +763,7 @@ button {
     letter-spacing: 0.03em;
     text-decoration: #EEEEEE;
     color: #FFFFFF;
-    background: #2196F3;
+    background: var(--main-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
@@ -807,7 +808,7 @@ button {
     height: 100%;
     width: 100%;
     transform: translateY(100%);
-    transition:  transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:  transform var(--transition);
 }
 
 .bg:hover,
@@ -855,7 +856,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--transition);
 }
 
 .modal-close {
@@ -868,7 +869,7 @@ button {
     position: absolute;
     top: 8px;
     right: 8px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--transition);
 }
 
 .modal-close:hover, .modal-close:focus {
@@ -887,7 +888,7 @@ button {
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--text-color);
     margin-top: 40px;
     margin-bottom: 12px;
 }
@@ -904,7 +905,7 @@ button {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: var(--grey-color);
 }
 
 .input-wrap {
@@ -918,7 +919,7 @@ button {
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--transition);
 }
 
 .form-input {
@@ -928,19 +929,19 @@ button {
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border var(--transition);
 }
 
 .form-input:hover, .form-input:focus {
     outline: none;
-    border: 1px solid #2196F3;
+    border: 1px solid var(--main-color);
     box-sizing: border-box;
     border-radius: 4px;
 }
 
 .form-input:hover+.input-icon,
 .form-input:focus+.input-icon {
-    fill: #2196F3;
+    fill: var(--main-color);
 }
 
 .input-comment {
@@ -977,14 +978,14 @@ button {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--grey-color);
     display: flex;
     align-items: center;
 }
 
 .check-terms {
     text-decoration-line: underline;
-    color: #2196F3;
+    color: var(--main-color);
     margin-left: 3px;
 }
 
@@ -995,7 +996,7 @@ button {
     justify-content: center;
     align-items: center;
     margin-right: 7px;
-    border: 2px solid #212121;
+    border: 2px solid var(--text-color);
     border-radius: 2px;;
 }
 
@@ -1005,7 +1006,7 @@ button {
 
 .checkbox:checked + .check-text span {
     border: none;
-    background-color: #2196F3;
+    background-color: var(--main-color);
 }
 
 .checkbox:checked + .check-text .check-icon {
@@ -1029,7 +1030,7 @@ button {
     letter-spacing: 0.06em;
     color: #FFFFFF;
     padding: 10px 55px;
-    background: #2196F3;
+    background: var(--main-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     margin: 0 auto;
